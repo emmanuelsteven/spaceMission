@@ -10,10 +10,9 @@ body {
   background-color: #fafafa;
 }
 
- a {
+a {
   text-decoration: none;
-
- }
+}
 
 .nav-container {
   height: 6rem;
@@ -39,8 +38,7 @@ body {
   text-decoration-line: none;
 }
 
-.nav-logo{
-display:flex;
-gap: 2rem;
+.nav-logo {
+  display: flex;
+  gap: 2rem;
 }
-
