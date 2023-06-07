@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import planetImg from './Img/planet.png';
 import './styles/miss.css';
 
@@ -7,16 +8,23 @@ const NavBar = () => (
     <div className="nav-logo">
       <img src={planetImg} alt="navlogo" width={50} height={50} />
       <h1 className="navtitle">
-        <Link to="/">Space Travelers Hub</Link>
+        <NavLink exact to="/" activeClassName="active">
+          Space Travelers Hub
+        </NavLink>
       </h1>
     </div>
     <div className="navlinks">
-      <Link to="/" className="navlink">Rockets</Link>
-      <Link to="/mission" className="navlink">Missions</Link>
-      <Link to="/My-Profile" className="navlink   profile">My Profile</Link>
+      <NavLink to="/Rocket" activeClassName="active" className="navlink">
+        Rockets
+      </NavLink>
+      <NavLink to="/mission" activeClassName="active" className="navlink">
+        Missions
+      </NavLink>
+      <NavLink to="/My-Profile" activeClassName="active" className="navlink profile">
+        My Profile
+      </NavLink>
     </div>
   </nav>
-
 );
 
 export default NavBar;
