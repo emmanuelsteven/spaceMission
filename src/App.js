@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        {/* <Route path="/" element={<Rockets />} /> */}
+        {<Route path="/" element={<Rockets />} />}
         {/* <Route path="/ missions" element={<Missions />} /> */}
         <Route path="/My-Profile" element={<Profile />} />
       </Routes>
