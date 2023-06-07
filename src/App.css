@@ -9,36 +9,3 @@
 body {
   background-color: #fafafa;
 }
-
-a {
-  text-decoration: none;
-}
-
-.nav-container {
-  height: 6rem;
-  padding: 1.5rem 6rem 1.7rem 6.25rem;
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navtitle a {
-  width: 15rem;
-  height: 2.313rem;
-  margin: 0.375rem 2.938rem 0.125rem 0;
-  font-family: Montserrat, sans-serif;
-  font-size: 1.875rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #0290ff;
-  text-decoration-line: none;
-}
-
-.nav-logo {
-  display: flex;
-  gap: 2rem;
-}
