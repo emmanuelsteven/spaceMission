@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import planetImg from './Img/planet.png';
 import './styles/miss.css';
