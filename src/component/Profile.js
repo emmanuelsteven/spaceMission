@@ -1,58 +1,41 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { cancelReserve, reservedRockets } from '../Redux/slices/rockets/rocketsSlice';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
-const Profile = () => {
-  const dispatch = useDispatch();
-  const rocketsList = useSelector((state) => state.rockets.rockets);
-  const reservedRockets = rocketsList.filter((rocket) => rocket.reserved === true);
+const MyProfile = () => {
+  const selectReservedRockets = (state) => state.rockets.rockets.filter((rocket) => rocket.reserved);
+  const selectReservedMissions = (state) => state.missions.reservedMissions.map((missionId) => state.missions.missions.find((mission) => mission.id === missionId));
+
+  const reservedRockets = useSelector(selectReservedRockets);
+  const reservedMissions = useSelector(selectReservedMissions);
 
   return (
-    <div className="reserved-rockets-con">
-      <div className="reserved-table">
-        <h3>My Rockets</h3>
-        <div className="list-con">
-          {reservedRockets.length === 0 ? (
-            <span>Not reserved rockets!</span>
-          ) : (
-            <ul>
-              {reservedRockets.map((rocket) => (
-                <li className="reserved-list" key={rocket.id}>{rocket.rocket_name}</li>
-              ))}
-            </ul>
-          )}
-        </div>
+    <div className="profiles">
+      <div className="rockets">
+        <h2>My Rockets</h2>
+        <table className="rocket-table">
+          <tbody>
+            {reservedRockets.map((rocket) => (
+              <tr key={rocket.id}>
+                <td>{rocket.rocket_name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-      <div className="reserved-mission">
-        <h3>My Missions</h3>
-        <div className="mission-list-container">
-          {reservedRockets.length === 0 ? (
-            <p>No Missions Yet!</p>
-          ) : (
-            <ul className="mission-lists">
-              {reservedRockets.map((rocket) => (
-                <li className="mission-list" key={rocket.rocket_id}>
-                  {rocket.rocket_name}
-                  <span className="leave-profile-btn">
-                    {rocket.reserved && (
-                      <button
-                        type="button"
-                        className="leave-btn"
-                        onClick={() => {
-                          dispatch(cancelReserve(rocket.rocket_id));
-                        }}
-                      >
-                        Cancel Reserve
-                      </button>
-                    )}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+      <div className="missions">
+        <h2>My Missions</h2>
+        <table className="rocket-table">
+          <tbody>
+            {reservedMissions.map((mission) => (
+              <tr key={mission.id}>
+                <td>{mission.mission_name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
 };
 
-export default Profile;
+export default MyProfile;
