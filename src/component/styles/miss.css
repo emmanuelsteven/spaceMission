@@ -49,32 +49,32 @@ a {
 
 /* mission styles starts here  */
 
-.mission_container{
+.mission_container {
   width: 100%;
   border-collapse: collapse;
 }
 
-#table td,th{
+#table td,
+th {
   border: 1px solid #d8d8d8;
   padding: 0.5rem;
-
 }
 
-.mission_name{
+.mission_name {
   font-weight: 500;
   font-size: 1.2rem;
   vertical-align: top;
   font-family: 'poppins', sans-serif;
 }
 
-.mission_description{
+.mission_description {
   font-size: 1rem;
   vertical-align: top;
   font-family: 'poppins', sans-serif;
   font-weight: 300;
 }
 
-.member-btn{
+.member-btn {
   font-family: 'Lato', sans-serif;
   font-size: 11px;
   font-weight: 800;
@@ -93,13 +93,12 @@ a {
   background-color: #f2f2f2;
 }
 
-
 #table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
   background-color: #f8f8f8;
-  color:#0d0c0c;
+  color: #0d0c0c;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -125,7 +124,6 @@ a {
   cursor: pointer;
 }
 
-
 .join-btn {
   font-family: 'Lato', sans-serif;
   font-size: 11px;
@@ -146,7 +144,6 @@ a {
   border: none;
   color: white;
 }
-
 
 .leave-btn {
   font-family: 'Lato', sans-serif;
@@ -170,16 +167,12 @@ a {
 }
 
 /* profileSetup styles */
-.mission_reservation h2{
+.mission_reservation h2 {
   color: #0290ff;
-
 }
 
-.mission-lists{
-  border: 1px solid #757575;
-  list-style: none;
-  padding: 1rem 0 1.5rem 0rem;
-  /* margin-bottom:1rem ; */
+li {
+  padding: 1.5rem;
   font-size: 1rem;
 }
 
@@ -187,12 +180,9 @@ ul li:nth-child(odd) {
   background-color: #e8e8e8;
 }
 
-
-.mission-lists{
+.mission-lists {
   border: none;
   width: 50%;
+  list-style: none;
+  padding: 1rem 0 1.5rem 0;
 }
- li{
-  padding: 1.5rem;
-  font-size: 1rem;
- }
