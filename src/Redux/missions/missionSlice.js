@@ -4,31 +4,28 @@ import axios from 'axios';
 const initialState = {
   missions: [],
   isLoading: false,
-  erro: null,
+  error: null,
 };
 
 export const getMissions = createAsyncThunk('missions/getMissions', async () => {
   try {
     const response = await axios.get('https://api.spacexdata.com/v3/missions');
-    console.log(response.data);
-    const allMissions = (response.data).map((mission) => mission);
-    // return allMissions;
- 
+    const allMission = (response.data).map((mission) => mission);
+    return allMission;
   } catch (error) {
     throw new Error('failed to get mission data');
   }
 });
 
 const missionSlice = createSlice({
-  name: 'missions',
+  name: 'mission',
   initialState,
   reducers: {
     onboardMission: (state, action) => {
-        console.log(action.payload)
       const missionId = action.payload;
       const newState = { ...state };
       newState.missions = state.missions.map((mission) => {
-        if (mission.mission.id !== missionId) {
+        if (mission.mission_id !== missionId) {
           return mission;
         }
         return { ...mission, reserved: true };
@@ -37,22 +34,31 @@ const missionSlice = createSlice({
     },
 
     offboardMission: (state, action) => {
-      state.missions = state.missions.filter((missions) => missions.id !== action.payload);
+      const missionId = action.payload;
+      const newState = { ...state };
+      newState.missions = state.missions.map((mission) => {
+        if (mission.mission_id !== missionId) {
+          return mission;
+        }
+        return { ...mission, reserved: false };
+      });
+      return newState;
     },
-
-    extraReducers: (builder) => {
-      builder
-        .addCase(getMissions.pending, (state) => {
-          state.isLoading = true;
-        })
-        .addCase(getMissions.fulfilled, (state, action) => {
-          state.isLoading = false;
-          state.missions = action.payload;
-        })
-        .addCase(getMissions.rejected, (state) => {
-          state.isLoading = false;
-        });
-    },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(getMissions.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+      .addCase(getMissions.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.missions = action.payload;
+      })
+      .addCase(getMissions.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message;
+      });
   },
 });
 
