@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const initialState = {
   missions: [],
@@ -9,8 +8,8 @@ const initialState = {
 
 export const getMissions = createAsyncThunk('missions/getMissions', async () => {
   try {
-    const response = await axios.get('https://api.spacexdata.com/v3/missions');
-    const allMission = (response.data).map((mission) => mission);
+    const response = await fetch('https://api.spacexdata.com/v3/missions');
+    const allMission = await response.json();
     return allMission;
   } catch (error) {
     throw new Error('failed to get mission data');
