@@ -3,7 +3,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { reserveRocket } from '../../Redux/slices/rockets/rocketsSlice';
+import { reserveRocket } from '../../Redux/rockets/rocketsSlice';
 
 const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();
