@@ -14,7 +14,7 @@ const NavBar = () => (
       </h1>
     </div>
     <div className="navlinks">
-      <NavLink to="/Rocket" activeClassName="active" className="navlink">
+      <NavLink to="/" activeClassName="active" className="navlink">
         Rockets
       </NavLink>
       <NavLink to="/mission" activeClassName="active" className="navlink">
