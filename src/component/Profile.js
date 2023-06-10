@@ -1,8 +1,7 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './styles/profile.css';
 
 const Profile = () => {
-  const dispatch = useDispatch();
   const rocketsList = useSelector((state) => state.rockets.rockets);
   const reservedRockets = rocketsList.filter((rocket) => rocket.reserved === true);
 
