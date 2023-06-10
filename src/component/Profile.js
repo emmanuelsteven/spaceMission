@@ -35,19 +35,6 @@ const Profile = () => {
               {reservedMission.map((mission) => (
                 <li className="mission-list" key={mission.mission_id}>
                   {mission.mission_name}
-                  <span className="leave-profile-btn">
-                    {mission.reserved && (
-                      <button
-                        type="button"
-                        className="leave-btn"
-                        onClick={() => {
-                          dispatch(leaveMission(mission.mission_id));
-                        }}
-                      >
-                        Leave Mission
-                      </button>
-                    )}
-                  </span>
                 </li>
               ))}
             </ul>
