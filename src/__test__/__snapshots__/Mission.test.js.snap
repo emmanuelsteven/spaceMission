@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission component dispatches offboardMission when "Leave Mission" button is clicked 1`] = `
+<div
+  className="mission_container"
+>
+  <table
+    id="table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Mission
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="mission_name"
+        >
+          Mission 1
+        </td>
+        <td
+          className="mission_description"
+        >
+          Mission 1 Description
+        </td>
+        <td
+          className="btns"
+        >
+          <button
+            className="member-btn"
+            type="button"
+          >
+            Not A Member
+          </button>
+        </td>
+        <td
+          className="btns"
+        >
+          <button
+            className="join-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            Join Mission
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="mission_name"
+        >
+          Mission 2
+        </td>
+        <td
+          className="mission_description"
+        >
+          Mission 2 Description
+        </td>
+        <td
+          className="btns"
+        >
+          <button
+            className="btnz"
+            type="button"
+          >
+            Active Member
+          </button>
+        </td>
+        <td
+          className="btns"
+        >
+          <button
+            className="leave-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            Leave Mission
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Mission component dispatches onboardMission when "Join Mission" button is clicked 1`] = `
+<div
+  className="mission_container"
+>
+  <table
+    id="table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Mission
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="mission_name"
+        >
+          Mission 1
+        </td>
+        <td
+          className="mission_description"
+        >
+          Mission 1 Description
+        </td>
+        <td
+          className="btns"
+        >
+          <button
+            className="member-btn"
+            type="button"
+          >
+            Not A Member
+          </button>
+        </td>
+        <td
+          className="btns"
+        >
+          <button
+            className="join-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            Join Mission
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="mission_name"
+        >
+          Mission 2
+        </td>
+        <td
+          className="mission_description"
+        >
+          Mission 2 Description
+        </td>
+        <td
+          className="btns"
+        >
+          <button
+            className="btnz"
+            type="button"
+          >
+            Active Member
+          </button>
+        </td>
+        <td
+          className="btns"
+        >
+          <button
+            className="leave-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            Leave Mission
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
