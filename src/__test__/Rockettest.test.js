@@ -1,3 +1,4 @@
+/* eslint-disable default-param-last */
 import { configureStore } from '@reduxjs/toolkit';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
@@ -31,7 +32,7 @@ it('renders correctly', () => {
         <Provider store={store}>
           <Rockets />
         </Provider>
-      </BrowserRouter>
+      </BrowserRouter>,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

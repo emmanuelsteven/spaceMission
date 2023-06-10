@@ -34,14 +34,14 @@ describe('Mission component', () => {
       },
     });
   });
-  
+
   test('dispatches onboardMission when "Join Mission" button is clicked', () => {
     store.dispatch = jest.fn();
 
     const { getByText } = render(
       <Provider store={store}>
         <Mission />
-      </Provider>
+      </Provider>,
     );
 
     fireEvent.click(getByText('Join Mission'));
@@ -54,7 +54,7 @@ describe('Mission component', () => {
     const { getByText } = render(
       <Provider store={store}>
         <Mission />
-      </Provider>
+      </Provider>,
     );
 
     fireEvent.click(getByText('Leave Mission'));
