@@ -20,7 +20,7 @@ describe('NavBar', () => {
         <Router>
           <NavBar />
         </Router>
-      </Provider>
+      </Provider>,
     );
 
     expect(screen.getByAltText('navlogo')).toBeInTheDocument();
@@ -36,7 +36,7 @@ describe('NavBar', () => {
         <Router>
           <NavBar />
         </Router>
-      </Provider>
+      </Provider>,
     );
 
     expect(asFragment()).toMatchSnapshot();
