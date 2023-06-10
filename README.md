@@ -1,70 +1,241 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+  <br/>
+  <img src="src/assets/planet.png" width="200px" />
+  <br/>
+  <h3><b>Space Travelers' Hub</b></h3>
+</div>
 
-In the project directory, you can run:
+<h1>React Group Capstone Project</h1>
 
-### `npm start`
+# 📗 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Music Tracks Website ](#-music-tracks-website-)
+  - [How to build the "Music Track" website](#how-to-build-the-music-track-website)
+- [Responsive website ](#responsive-website--)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Tools ](#tools-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [Authors](#authors)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 📖 Space Travelers' Hub<a name="about-project"></a>
 
-### `npm test`
+Introducing the Space Traveler's Hub, a cutting-edge React.js web application designed to provide an immersive experience for space enthusiasts. This innovative project harnesses the power of APIs to fetch real-time data, creating a dynamic and interactive platform.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Space Traveler's Hub offers an array of features tailored to meet the needs of aspiring space explorers. Users can seamlessly navigate through a curated selection of rockets, each showcasing detailed information and captivating images. Leveraging the power of APIs, the application ensures that the data remains up to date and accurate.
 
-### `npm run build`
+### How to build the "Space Mission" website
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 1. Use React.js.
+- 2. Learn how to use proper ES6 syntax.
+- 3. Use Redux.
+- 4. Use React.js Hooks.
+- 5. Implementation of External API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Walk through <a name="walk-through"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<ul>
+  <li><a href="https://github.com/microverseinc/curriculum-react-redux/blob/main/group-project/project_space_travelers_hub.md">See the Project Requirement</a></li>
+  <li>If required you should personalize the content of your page. Choose a topic that is different than the one in the original design</li>
 
-### `npm run eject`
+**_API REQUIREMENTS_**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  <li><a href="https://api.spacexdata.com/v4/rockets">Rockets API Used</a></li>
+</ul>
+<li><a href="https://api.spacexdata.com/v3/missions">Missions API Used</a></li>
+</ul>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Built With <a name="built-with"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**_feature-One_**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Implementation of Basic Framework linters error free.
+- Implementation of <a href="https://github.com/microverseinc/curriculum-tools-copy-projects">Kanban Board</a>
+- Implementation of <a href="https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md">Gitflow</a>
 
-## Learn More
+**_feature-two_**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Implementation of <a href="https://create-react-app.dev/docs/getting-started">Create React App</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**_feature-three_**
 
-### Code Splitting
+- We will create a Space Travelers' Hub for the visitor elaborating different options and type
+- Choosing the <a href="https://api.spacexdata.com/v4/rockets">API</a>
+- Choose text, icons, fonts.
+- Set up the repository and tools has been done in feature-one, and feature-two
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Tech Stack <a name="tech-stack"></a>
 
-### Analyzing the Bundle Size
+<details>
+  <summary>Client Side / Front-End</summary>
+  <ul>
+    <li><a href="https://create-react-app.dev/">React.js</a></li>
+    <li><a href="https://www.w3.org/Style/CSS/">CSS</a></li>
+  </ul>
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<details>
+  <summary>Server Side / Back-End</summary>
+  <ul>
+    <li><a href="https://render.com/">Render</a></li>
+  </ul>
+</details>
 
-### Making a Progressive Web App
+### Tools <a name="tools"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  <details>
+    <summary>Code Convention, Code Analysis</summary>
+      <ul>
+        <li><a href="https://eslint.org/">ESLint</a></li>
+        <li><a href="https://webhint.io/">Webhint</a></li>
+        <li><a href="https://stylelint.io/">Stylelint</a></li>
+        <li><a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en">Lighthouse</a></li>
+        <li><a href="https://www.npmjs.com/package/npm-check">node_modules checker</a></li>
+      </ul>
+  </details>
+  <details>
+    <summary>Version Control, CI/CD, Hosting Service</summary>
+      <ul>
+        <li><a href="https://render.com/">Render</a></li>
+        <li><a href="https://github.com/features/actions">Github Actions</a></li>
+        <li><a href="https://git-scm.com/">Git</a></li>
+      </ul>
+  </details>
+  <details>
+    <summary>IDE, Desktop Apps, Other Tools</summary>
+      <ul>
+        <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+        <li><a href="https://desktop.github.com/">Github Desktop</a></li>
+      </ul>
+  </details>
 
-### Advanced Configuration
+### Key Features <a name="key-features"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Reserve Rocket
+- Unreserve Rocket
+- Leave Mission
+- Cancel Mission
+- Button Interactions
+- Attractive Images & Design
+- Dynamic page (data is retrieved from JSON file)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+[Live Demo Link](https://spacemission-74wc.onrender.com)
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- git version 2.38.x
+- node.js version > 12.x
+- IDE
+- browser (chrome, firefox, edge, safari)
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my folder
+  git clone git@github.com:tomdan-ai/Travalers-space-hub.git
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd Travalers-space-hub
+  node npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  Live server
+```
+
+### Run tests
+
+To run tests, run the following command:
+Run Github Actions Test
+
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is deployed at Render.com you can clone it here. [https://github.com/emmanuelsteven/spaceMission]
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+
+👤 **Bezalell Barnet W**
+
+- GitHub: [@BezzB](https://github.com/BezzB)
+
+👤 **Emmanuel Steven**
+
+- GitHub: [@emmanuelsteven](https://github.com/emmanuelsteven)
+- LinkedIn: [emmanuelsteven](https://www.linkedin.com/in/emmanuelsteven/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Dynamic content.**
+- [ ] **Will add some background and beautification**
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/emmanuelsteven/spaceMission/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project give a star to this repositiory.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank the Microverse full-stack curriculum for the inspiration and guidance.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is under [MIT](https://github.com/emmanuelsteven/spaceMission/blob/dev/LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
