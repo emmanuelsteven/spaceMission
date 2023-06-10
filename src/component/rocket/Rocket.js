@@ -1,5 +1,3 @@
-/* eslint-disable react/require-default-props */
-/* eslint-disable arrow-body-style */
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';

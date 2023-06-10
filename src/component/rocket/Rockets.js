@@ -14,8 +14,7 @@ const Rockets = () => {
   return (
     <div className="rocket-con">
       {rockets
-        // eslint-disable-next-line max-len
-        && rockets.map((rocket) => <Rocket key={rocket.id} rocket_name={rocket.name} rocket={rocket} />)}
+       && rockets.map((rocket) => <Rocket key={rocket.id} rocket_name={rocket.name} rocket={rocket} />)}
     </div>
   );
 };
