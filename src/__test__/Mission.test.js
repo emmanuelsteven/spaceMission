@@ -115,7 +115,7 @@ describe('Mission component', () => {
     const tree = renderer.create(
       <Provider store={store}>
         <Mission />
-      </Provider>
+      </Provider>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -136,7 +136,7 @@ describe('Mission component', () => {
     const tree = renderer.create(
       <Provider store={store}>
         <Mission />
-      </Provider>
+      </Provider>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
