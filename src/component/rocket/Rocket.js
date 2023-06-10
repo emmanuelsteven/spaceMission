@@ -1,14 +1,9 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { reserveRocket } from '../../Redux/rockets/rocketsSlice';
 
 const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();
-  const [changeColor, setChangeColor] = useState(false);
-  const handleChangeColor = () => {
-    setChangeColor(!changeColor);
-  };
   const handleReserveRocket = () => {
     dispatch(reserveRocket(rocket.id));
   };
@@ -23,11 +18,10 @@ const Rocket = ({ rocket }) => {
           <p>{rocket.description}</p>
         </div>
         <button
-          className={`${changeColor === true ? 'cancel-reserve-btn' : 'reserve-btn'}`}
+          className={rocket.reserved === true ? 'cancel-reserve-btn' : 'reserve-btn'}
           type="button"
           onClick={() => {
             handleReserveRocket();
-            handleChangeColor();
           }}
           data-testid={`reserve-button-${rocket.id}`}
         >
